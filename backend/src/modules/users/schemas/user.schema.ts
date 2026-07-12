@@ -19,6 +19,11 @@ export class User {
   password!: string;
 
   @Prop({
+    required: false,
+  })
+  name!: string;
+
+  @Prop({
     type: String,
     default: null,
   })
